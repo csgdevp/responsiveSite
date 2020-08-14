@@ -130,6 +130,12 @@
     border-top: 2px solid rgb(138, 138, 138, 25%);
     overflow: hidden;
   }
+  .logo {
+    display: block;
+    margin: 20px 10px; 
+    max-width: 100%;
+    text-align: center;
+  }
   
     /* Pseudo Styles */
   
@@ -155,14 +161,15 @@
   
   .logo {
     float: left;
-    width: 50%;
+    width: calc(50% - 20px);
+    margin-bottom: 0; 
   }
 
   
   .profile-image {
     float: right;
     margin: 0 auto;
-    width: 50%;
+    width: 40%;
   }
   
   .bio {
@@ -239,15 +246,27 @@
     padding: 5px;
     margin-left: 5px;
   }
+  .about::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .portfolio::after {
+    content: "";
+    clear: both;
+    display: table;
+  
+  }
   
   }
   
   @media (min-width: 1024px) {
   
     .logo {
-      float: left;
-      width: 33.33%;
-      padding: 10px;
+      float: left; 
+      width: calc(33.33% - 20px);
+      padding: 10px; 
     }
   
     .profile-image {
@@ -346,6 +365,11 @@
       max-width: 45%;
       max-height: 45%;
       margin-left: 20px;
+    }
+    .portfolio::after {
+      content: "";
+      clear: both;
+      display: table;
     }
   
   }  
