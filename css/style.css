@@ -130,6 +130,10 @@
     border-top: 2px solid rgb(138, 138, 138, 25%);
     overflow: hidden;
   }
+  .content-group{
+     margin: 0 auto;
+     padding-bottom: 20px;
+  }
   .logo {
     display: block;
     margin: 20px 10px; 
